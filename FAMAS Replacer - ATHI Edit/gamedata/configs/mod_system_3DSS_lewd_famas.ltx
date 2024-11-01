@@ -1,7 +1,8 @@
 ![wpn_famas_f1]
 >scopes                                   = leupold, pn23, specter, gauss_sight, t12
 !hud_fov  								
-!laser_status                           
+!laser_status   
+                        
 lewd_lens_hide_enabled       = true
 lewd_lens_hide_bone          = scope1
 lewd_lens_hide_delays        = 0.1,0
@@ -38,7 +39,7 @@ zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 scope_zoom_factor_alt             = 0
 use_alt_aim_hud                   = true		
-
+zoom_step_count=1
 [wpn_famas_f1_specter_hud]:wpn_famas_f1_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_f1_specter_hud.ogf
         aim_hud_offset_pos               = 0.010929, -0.043599, -0.085946
@@ -80,7 +81,7 @@ nv_scope_status = 0
 inv_weight                                         = 4.3
 
 scope_status                                       = 1
-scope_zoom_factor                                  = 30
+scope_zoom_factor                                  = 20
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 
@@ -132,11 +133,17 @@ item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_f
 ;===================================================================================================
 ![wpn_famas_felin]
 >scopes                                   = leupold, pn23, specter, gauss_sight, marchf, t12
-!hud_fov  								                         
+!hud_fov  								 
+                        
 lewd_lens_hide_enabled       = true
 lewd_lens_hide_bone          = scope1
 lewd_lens_hide_delays        = 0.1,0
 lewd_lens_hide_aim_mode      = true, false, false    
+![wpn_famas_felin_hud]
+        aim_hud_offset_alt_pos           = -0.043491, -0.013926, -0.032657
+        aim_hud_offset_alt_pos_16x9      = -0.043491, -0.013926, -0.032657
+        aim_hud_offset_alt_rot           = 0.004625, 0.009381, 0.75
+        aim_hud_offset_alt_rot_16x9      = 0.004625, 0.009381, 0.75
 		
 ![wpn_famas_felin_acog]
         scope_zoom_factor                = 42.86
@@ -163,7 +170,7 @@ zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 scope_zoom_factor_alt             = 0
 use_alt_aim_hud                   = true		
-
+zoom_step_count=1
 [wpn_famas_felin_specter_hud]:wpn_famas_felin_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_specter_hud.ogf
         aim_hud_offset_pos               = 0.010605, -0.000887, -0.085575
@@ -204,7 +211,7 @@ hud					= wpn_famas_felin_pn23_hud
 inv_weight                                         = 4.3
 
 scope_status                                       = 1
-scope_zoom_factor                                  = 30
+scope_zoom_factor                                  = 20
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 
@@ -289,7 +296,12 @@ lewd_lens_hide_enabled       = true
 lewd_lens_hide_bone          = scope1
 lewd_lens_hide_delays        = 0.1,0
 lewd_lens_hide_aim_mode      = true, false, false               
-                 
+
+![wpn_famas_commando_hud]
+        aim_hud_offset_alt_pos           = -0.003712, -0.039753, 0.0071
+        aim_hud_offset_alt_pos_16x9      = -0.003712, -0.039753, 0.0071
+        aim_hud_offset_alt_rot           = 0.000823, 0.008267, 0.768434
+        aim_hud_offset_alt_rot_16x9      = 0.000823, 0.008267, 0.768434                 
 ;----------------------------------------------------------------------------------------------						 
 ![wpn_famas_commando_acog]
         scope_zoom_factor                = 42.86
@@ -341,7 +353,7 @@ scope_zoom_factor                                  = 30
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 scope_zoom_factor_alt             = 0	
-
+zoom_step_count=1
 [wpn_famas_commando_specter_hud]:wpn_famas_commando_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_specter_hud.ogf
         aim_hud_offset_pos               = 0.012165, -0.058321, -0.004888
@@ -365,7 +377,7 @@ scope_zoom_factor                                  = 30
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 scope_zoom_factor_alt             = 0		
-
+zoom_step_count=1
 [wpn_famas_commando_spec_alt_hud]:wpn_famas_commando_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_spec_alt_hud.ogf
         aim_hud_offset_pos               = 0.012165, -0.058321, -0.004888
@@ -395,10 +407,10 @@ scope_dynamic_zoom                                 = on
 
 [wpn_famas_commando_leupold_hud]:wpn_famas_commando_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_leupold_hud.ogf
-        aim_hud_offset_pos               = 0.010575, -0.001569, -0.066502
-        aim_hud_offset_pos_16x9          = 0.010575, -0.001569, -0.066502
-        aim_hud_offset_rot               = 0.024989, 0.000862, 0.006198
-        aim_hud_offset_rot_16x9          = 0.024989, 0.000862, 0.006198
+        aim_hud_offset_pos               = 0.01196, -0.05712, 0.029568
+        aim_hud_offset_pos_16x9          = 0.01196, -0.05712, 0.029568
+        aim_hud_offset_rot               = 0.024072, 0.000695, 0.006198
+        aim_hud_offset_rot_16x9          = 0.024072, 0.000695, 0.006198
 
 ;----------------------------------------------------------------------------------------------	
 [wpn_famas_commando_mark8_rmr]:wpn_famas_commando
@@ -417,10 +429,10 @@ scope_dynamic_zoom                                 = on
 
 [wpn_famas_commando_mark8_rmr_hud]:wpn_famas_commando_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_mark8_rmr_hud.ogf
-        aim_hud_offset_pos               = 0.010575, -0.001569, -0.066502
-        aim_hud_offset_pos_16x9          = 0.010575, -0.001569, -0.066502
-        aim_hud_offset_rot               = 0.024989, 0.000862, 0.006198
-        aim_hud_offset_rot_16x9          = 0.024989, 0.000862, 0.006198
+        aim_hud_offset_pos               = 0.01196, -0.05712, 0.029568
+        aim_hud_offset_pos_16x9          = 0.01196, -0.05712, 0.029568
+        aim_hud_offset_rot               = 0.024072, 0.000695, 0.006198
+        aim_hud_offset_rot_16x9          = 0.024072, 0.000695, 0.006198
 		
         aim_hud_offset_alt_pos           = 0.017821, -0.05131, 0.0071
         aim_hud_offset_alt_pos_16x9      = 0.017821, -0.05131, 0.0071
@@ -438,16 +450,16 @@ hud					= wpn_famas_commando_pn23_hud
 inv_weight                                         = 4.3
 
 scope_status                                       = 1
-scope_zoom_factor                                  = 30
+scope_zoom_factor                                  = 20
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 
 [wpn_famas_commando_pn23_hud]:wpn_famas_commando_hud
 item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_pn23_hud.ogf
-        aim_hud_offset_pos               = 0.01072, -0.010902, -0.086097
-        aim_hud_offset_pos_16x9          = 0.01072, -0.010902, -0.086097
-        aim_hud_offset_rot               = 0.010137, 0.001109, 0
-        aim_hud_offset_rot_16x9          = 0.010137, 0.001109, 0
+        aim_hud_offset_pos               = 0.01192, -0.056209, -0.029634
+        aim_hud_offset_pos_16x9          = 0.01192, -0.056209, -0.029634
+        aim_hud_offset_rot               = 0.02377, 0.000317, 0
+        aim_hud_offset_rot_16x9          = 0.02377, 0.000317, 0
 
 ;----------------------------------------------------------------------------------------------			
 [wpn_famas_commando_gauss_sight]:wpn_famas_commando
@@ -490,4 +502,3 @@ item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_c
         aim_hud_offset_pos_16x9          = 0.012376, -0.0444, -0.024593
         aim_hud_offset_rot               = 0.02605, 0.000137, 0.006198
         aim_hud_offset_rot_16x9          = 0.02605, 0.000137, 0.006198
-		
