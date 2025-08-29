@@ -1,12 +1,12 @@
 ;------------------------------------------------------------------------------------------------
-[wpn_famas_felin]:identity_immunities,weapon_probability,default_weapon_params,wpn_famas_sounds
+[wpn_famas_f1]:identity_immunities,weapon_probability,default_weapon_params,wpn_famas_sounds
 GroupControlSection                      = spawn_group
 $npc                                     = on
 $prefetch                                = 8
 $spawn                                   = "weapons\lr-300"
 scheduled                                = off
 cform                                    = skeleton
-parent_section                           = wpn_famas_felin
+parent_section                           = wpn_famas_f1
 hud_fov                                  = 0.65
 class                                    = WP_AK74
 slot                                     = 2
@@ -19,23 +19,23 @@ single_handed                            = 0
 default_to_ruck                          = false
 sprint_allowed                           = true
 
-icons_texture                            = ui\lewd_famas_icon
+icons_texture                            = ui\famas_icon
 inv_grid_height                          = 2
 inv_grid_width                           = 5
-inv_grid_x                               = 5
-inv_grid_y                               = 2
-inv_name                                 = st_wpn_famas_felin
-inv_name_short                           = st_wpn_famas_felin
-description                              = st_wpn_famas_felin_descr
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+inv_name                                 = st_wpn_famas_f1
+inv_name_short                           = st_wpn_famas_f1
+description                              = st_wpn_famas_f1_descr
 
 kind                                     = w_rifle
 inv_weight                               = 3.8
-cost                                     = 52000
+cost                                     = 44900
 repair_type                              = rifle_5
 weapon_class                             = assault_rifle
 
-hud                                      = wpn_famas_felin_hud
-visual                                   = dynamics\weapons\wpn_famas\wpn_famas_felin_world.ogf
+hud                                      = wpn_famas_f1_hud
+visual                                   = dynamics\weapons\wpn_famas\wpn_famas_f1_world.ogf
 position                                 = -0.026, -0.135, 0.0
 orientation                              = 0, 0, 0
 fire_point                               = 0.0, 0.186, 0.435
@@ -76,14 +76,13 @@ ammo_elapsed                             = 25
 ammo_mag_size                            = 25
 startup_ammo                             = 90
 
-scopes                                   = ac10632, acog, eot, c-more
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
 silencer_name                            = wpn_sil_nato
 silencer_status                          = 2
 silencer_x                               = 185
-silencer_y                               = 15
+silencer_y                               = 14
 silencer_light_color                     = 0.6, 0.5, 0.3
 silencer_light_range                     = 0.01
 silencer_light_time                      = 0.2
@@ -100,7 +99,7 @@ hit_power                                = 0.5, 0.5, 0.5, 0.5
 hit_type                                 = fire_wound
 fire_distance                            = 1000
 bullet_speed                             = 920
-rpm                                      = 955
+rpm                                      = 950
 rpm_empty_click                          = 200
 
 use_aim_bullet = false
@@ -168,36 +167,31 @@ snd_reload_empty                                                  = weapons\fama
 snd_reload_misfire                                                = weapons\famas\revival
 snd_switch_mode                                                   = weapons\famas\firemode
 
-use_alt_aim_hud                     = true
- 
-laser_status                        = true
-
-[wpn_famas_felin_hud]:hud_base
-item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_hud.ogf
+[wpn_famas_f1_hud]:hud_base
+item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_f1_hud.ogf
 attach_place_idx                         = 0
 zoom_hide_crosshair                      = true   
 
-
+item_position                            = 0.0, 0.0, 0.0
 item_orientation                         = 0.0, 0.0, 0.0
 
         lowered_hud_offset_pos           = 0.15299, -0.002124, 0
         lowered_hud_offset_pos_16x9      = 0.15299, -0.002124, 0
 
-        aim_hud_offset_pos               = 0.009941, 0.02368, -0.071412
-        aim_hud_offset_pos_16x9          = 0.009941, 0.02368, -0.071412
-        aim_hud_offset_rot               = 0.006187, 0.0056, 0
-        aim_hud_offset_rot_16x9          = 0.006187, 0.0056, 0
-        hands_orientation                = 0.2914, 0.336399, 0.15
-        hands_orientation_16x9           = 0.2914, 0.336399, 0.15
-        hands_position                   = -0.006558, 0.00072, -0.072401
-        hands_position_16x9              = -0.006558, 0.00072, -0.072401
+        hands_orientation                = 0.2596, 0.246799, 0.15
+        hands_orientation_16x9           = 0.2596, 0.246799, 0.15
+        hands_position                   = 0.032431, -0.003978, -0.044094
+        hands_position_16x9              = 0.032431, -0.003978, -0.044094
+
+        aim_hud_offset_pos               = -0.030096, 0.013614, -0.031675
+        aim_hud_offset_pos_16x9          = -0.030096, 0.013614, -0.031675
+        aim_hud_offset_rot               = 0.002937, 0.005003, 0
+        aim_hud_offset_rot_16x9          = 0.002937, 0.005003, 0
 		
-		aim_hud_offset_alt_pos               = 0.009941, 0.02368, -0.071412
-        aim_hud_offset_alt_pos_16x9          = 0.009941, 0.02368, -0.071412
-        aim_hud_offset_alt_rot               = 0.006187, 0.0056, 0
-        aim_hud_offset_alt_rot_16x9          = 0.006187, 0.0056, 0
-		
-        item_position                    = -0.001546, 0.000142, 0
+		aim_hud_offset_alt_pos           = 0.010261, 0.012796, -0.028751
+        aim_hud_offset_alt_pos_16x9      = 0.010261, 0.012796, -0.028751
+        aim_hud_offset_alt_rot           = 0.005127, 0.00544, 0
+        aim_hud_offset_alt_rot_16x9      = 0.005127, 0.00544, 0
 
 
 
@@ -209,40 +203,37 @@ gl_hud_offset_rot_16x9                   = 0.000000, 0.000000, 0.000000
 lean_hud_offset_pos                      = 0, 0, 0
 lean_hud_offset_rot                      = 0, 0, 0
 
-anm_hide                                 = fam_hide, idle
-anm_idle                                 = fam_idle, idle
-anm_idle_aim                             = fam_aim, idle
-anm_idle_aim_moving                      = fam_walk, idle, 0.75
-anm_idle_aim_moving_crouch               = fam_walk, idle, 0.75 
-anm_idle_moving                          = fam_walk, idle
-anm_idle_moving_crouch                   = fam_walk, idle, 0.75
-anm_idle_sprint                          = fam_sprint, idle, 1.1
-anm_reload                               = fam_reload, l85_reload
-anm_reload_empty                         = fam_reload_empty, l85_reload_empty
-anm_reload_misfire                       = fam_misfire_scope, l85_revival
-anm_shots                                = fam_shoot, l85_shoot
-anm_shots_aim                            = fam_aim_shoot, l85_shoot
-anm_show                                 = fam_draw, idle
-anm_switch_mode                          = fam_fire_select, idle
-anm_idle_aim_start                       = fam_aim_start, idle
-anm_idle_aim_end                         = fam_aim_end, idle
-anm_bore                                 = fam_dry, idle, 0.62
+anm_hide                                 = famst_hide, idle
+anm_idle                                 = famst_idle, idle
+anm_idle_aim                             = famst_aim, idle
+anm_idle_aim_moving                      = famst_walk, idle, 0.75
+anm_idle_aim_moving_crouch               = famst_walk, idle, 0.75 
+anm_idle_moving                          = famst_walk, idle
+anm_idle_moving_crouch                   = famst_walk, idle, 0.75
+anm_idle_sprint                          = famst_sprint, idle, 1.1
+anm_reload                               = famst_reload, l85_reload
+anm_reload_empty                         = famst_reload_empty, l85_reload_empty
+anm_reload_misfire                       = famst_misfire_scope, l85_revival
+anm_shots                                = famst_shoot, l85_shoot
+anm_shots_aim                            = famst_aim_shoot, l85_shoot
+anm_show                                 = famst_draw, idle
+anm_switch_mode                          = famst_fire_select, idle
+anm_idle_aim_start                       = famst_aim_start, idle
+anm_idle_aim_end                         = famst_aim_end, idle
+anm_bore                                 = famst_dry, idle, 0.62
 
-anm_hide_jammed                        = fam_hide, idle_jammed         
-anm_idle_jammed                        = fam_idle, idle_jammed
-anm_idle_aim_jammed                    = fam_aim, idle_jammed
-anm_idle_aim_moving_jammed             = fam_walk, idle_jammed, 0.75
-anm_idle_aim_moving_crouch_jammed      = fam_walk, idle_jammed,  0.7
-anm_idle_moving_jammed                 = fam_walk, idle_jammed
-anm_idle_moving_crouch_jammed          = fam_walk, idle_jammed, 0.7
-anm_idle_sprint_jammed                 = fam_sprint, idle_jammed
-anm_show_jammed                        = fam_draw, idle_jammed
-anm_idle_aim_start_jammed              = fam_aim_start, idle_jammed
-anm_idle_aim_end_jammed                = fam_aim_end, idle_jammed
-anm_bore_jammed                        = fam_dry, idle_jammed, 0.62
-        
-		
-		
+anm_hide_jammed                        = famst_hide, idle_jammed         
+anm_idle_jammed                        = famst_idle, idle_jammed
+anm_idle_aim_jammed                    = famst_aim, idle_jammed
+anm_idle_aim_moving_jammed             = famst_walk, idle_jammed, 0.75
+anm_idle_aim_moving_crouch_jammed      = famst_walk, idle_jammed,  0.7
+anm_idle_moving_jammed                 = famst_walk, idle_jammed
+anm_idle_moving_crouch_jammed          = famst_walk, idle_jammed, 0.7
+anm_idle_sprint_jammed                 = famst_sprint, idle_jammed
+anm_show_jammed                        = famst_draw, idle_jammed
+anm_idle_aim_start_jammed              = famst_aim_start, idle_jammed
+anm_idle_aim_end_jammed                = famst_aim_end, idle_jammed
+anm_bore_jammed                        = famst_dry, idle_jammed
 
 
 		
@@ -256,103 +247,3 @@ fire_point                               = 0, 0, 0.3
 fire_point2                              = 0, 0, 0.3
 
 freelook_z_offset_mul					 = 0.7
-
-
-
-;------------------------------------------------------------------------------------------------
-[wpn_famas_felin_ac10632]:wpn_famas_felin
-1icon_layer                              = ac10632
-1icon_layer_x                            = 110
-1icon_layer_y                            = -8
-
-
-
-inv_weight                               = 3.95
-
-hud                                      = wpn_famas_felin_ac10632_hud
-visual                                   = dynamics\weapons\wpn_famas\wpn_famas_felin_world.ogf
-use_alt_aim_hud							 = true
-
-[wpn_famas_felin_ac10632_hud]:wpn_famas_felin_hud
-item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_mrs_hud.ogf
-
-        aim_hud_offset_pos               = 0.010137, -0.000667, -0.131089
-        aim_hud_offset_pos_16x9          = 0.010137, -0.000667, -0.131089
-        aim_hud_offset_rot               = 0.003178, 0.00545, -0.0024
-        aim_hud_offset_rot_16x9          = 0.003178, 0.00545, -0.0024
-
-;------------------------------------------------------------------------------------------------
-[wpn_famas_felin_acog]:wpn_famas_felin
-1icon_layer                              = acog
-1icon_layer_x                            = 110
-1icon_layer_y                            = -8
-
-
-inv_weight                               = 4.09
-
-hud                                      = wpn_famas_felin_acog_hud
-visual                                   = dynamics\weapons\wpn_famas\wpn_famas_felin_world.ogf
-
-scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_acog
-scope_zoom_factor                                  = 25
-zoom_rotate_time		                           = 0.25
-scope_dynamic_zoom		                           = off
-
-
-
-[wpn_famas_felin_acog_hud]:wpn_famas_felin_hud,hud_low_interia
-item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_acog_hud.ogf
-
-        aim_hud_offset_pos               = 0.010137, -0.000667, -0.131089
-        aim_hud_offset_pos_16x9          = 0.010137, -0.000667, -0.131089
-        aim_hud_offset_rot               = 0.003178, 0.00545, -0.0024
-        aim_hud_offset_rot_16x9          = 0.003178, 0.00545, -0.0024
-
-
-;------------------------------------------------------------------------------------------------
-[wpn_famas_felin_eot]:wpn_famas_felin
-$spawn                                   = "weapons\famas_eot"
-
-1icon_layer                              = eot
-1icon_layer_x                            = 110
-1icon_layer_y                            = -8
-
-
-inv_weight                               = 4.10
-
-hud                                      = wpn_famas_felin_eot_hud
-visual                                   = dynamics\weapons\wpn_famas\wpn_famas_felin_world.ogf
-
-
-[wpn_famas_felin_eot_hud]:wpn_famas_felin_hud
-item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_eot_hud.ogf
-
-        aim_hud_offset_pos               = 0.009977, -0.009625, -0.114238
-        aim_hud_offset_pos_16x9          = 0.009977, -0.009625, -0.114238
-        aim_hud_offset_rot               = 0.003178, 0.00545, -0.0024
-        aim_hud_offset_rot_16x9          = 0.003178, 0.00545, -0.0024
-
-;------------------------------------------------------------------------------------------------
-[wpn_famas_felin_c-more]:wpn_famas_felin
-$spawn                                   = "weapons\famas_c-more"
-
-1icon_layer                              = c-more
-1icon_layer_x                            = 110
-1icon_layer_y                            = -8
-
-
-inv_weight                               = 4.10
-
-hud                                      = wpn_famas_felin_c-more_hud
-visual                                   = dynamics\weapons\wpn_famas\wpn_famas_felin_world.ogf
-
-
-[wpn_famas_felin_c-more_hud]:wpn_famas_felin_hud
-item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_felin_c-more_hud.ogf
-
-        aim_hud_offset_pos               = 0.009657, -0.004505, -0.123404
-        aim_hud_offset_pos_16x9          = 0.009657, -0.004505, -0.123404
-        aim_hud_offset_rot               = 0.003178, 0.00545, -0.0024
-        aim_hud_offset_rot_16x9          = 0.003178, 0.00545, -0.0024
-
