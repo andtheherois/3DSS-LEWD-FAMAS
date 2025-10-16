@@ -73,7 +73,7 @@ ammo_elapsed                             = 30
 ammo_mag_size                            = 30
 startup_ammo                             = 90
 
-scopes                                   = ac10632, acog, eot, c-more, leupold, pn23, specter, gauss_sight, triji, mark8_rmr, spec_alt, t12, tac30, march_f_shorty, march_f_shorty_alt, c79, echo1, devo, deltapoint, d0cter, hco, he510, lco1, p1x42, pk6, point_aimpro, romeo8, uh2
+scopes                                   = ac10632, acog, eot, c-more, leupold, pn23, specter, gauss_sight, triji, mark8_rmr, spec_alt, t12, tac30, march_f_shorty, march_f_shorty_alt, c79, echo1, devo, deltapoint, d0cter, hco, he510, lco1, p1x42, pk6, point_aimpro, romeo8, uh2, uh1_magd
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
@@ -920,3 +920,43 @@ item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_c
         aim_hud_offset_pos_16x9          = -0.016414, -0.0445, -0.024141
         aim_hud_offset_rot               = -0.000993, 9.3e-05, 0.003
         aim_hud_offset_rot_16x9          = -0.000993, 9.3e-05, 0.003
+		
+;----------------------------------------------------------------------------------------------			
+[wpn_famas_commando_uh1_magd]:wpn_famas_commando
+hud					= wpn_famas_commando_uh1_magd_hud
+
+inv_grid_x                               = 0
+inv_grid_y                               = 4
+
+1icon_layer                              = uh1_magd_x
+1icon_layer_x			= 73
+1icon_layer_y			= -26
+
+scope_status                                       = 1
+scope_zoom_factor                                  = 20
+
+[wpn_famas_commando_uh1_magd_hud]:wpn_famas_commando_hud
+item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_uh1_magd_hud.ogf
+        aim_hud_offset_pos               = -0.016517, -0.044063, -0.066698
+        aim_hud_offset_pos_16x9          = -0.016517, -0.044063, -0.066698
+        aim_hud_offset_rot               = -0.001214, 0.00019, 0.003
+        aim_hud_offset_rot_16x9          = -0.001214, 0.00019, 0.003
+		
+;----------------------------------------------------------------------------------------------			
+[wpn_famas_commando_uh1_magd_off]:wpn_famas_commando
+hud					= wpn_famas_commando_uh1_magd_off_hud
+
+inv_grid_x                               = 0
+inv_grid_y                               = 4
+
+1icon_layer                              = uh1_magd_x
+1icon_layer_x			= 73
+1icon_layer_y			= -26
+
+[wpn_famas_commando_uh1_magd_off_hud]:wpn_famas_commando_hud
+item_visual                              = anomaly_weapons\wpn_famas\wpn_famas_commando_uh1_magd_off_hud.ogf
+        aim_hud_offset_pos               = -0.016517, -0.044063, 0
+        aim_hud_offset_pos_16x9          = -0.016517, -0.044063, 0
+        aim_hud_offset_rot               = -0.001214, 0.00019, 0.003
+        aim_hud_offset_rot_16x9          = -0.001214, 0.00019, 0.003
+				
